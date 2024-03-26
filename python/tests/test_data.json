@@ -1,0 +1,4 @@
+{
+    "str_1_1_unique_chars"    : "abcdefghijklmnopqrstuvwxyzSTNHLGDA12345",
+    "str_1_1_duplicate_chars" : "abcdefghijklmnopqrstuvwxyzSTNHLGDA1234a"
+}
