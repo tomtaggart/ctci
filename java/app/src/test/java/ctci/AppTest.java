@@ -14,8 +14,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import com.google.gson.*;
 
-import ctci.str_1_1_DupSol1;
-import ctci.str_1_1_DupSol2;
+import ctci.*;
 
 import static org.junit.Assert.*;
 
@@ -23,7 +22,7 @@ public class AppTest {
     public static Map<String, String> data;
     
     @BeforeClass public static void loadTestDataFile() throws IOException {
-        Reader reader = Files.newBufferedReader(Paths.get("./src/test/java/ctci/1_1_TestData.json"));
+        Reader reader = Files.newBufferedReader(Paths.get("./src/test/java/ctci/TestData.json"));
         Gson gson = new Gson();
         data = gson.fromJson(reader, Map.class);
     }
@@ -42,6 +41,48 @@ public class AppTest {
     
     @Test public void str_1_1_DuplicateCharsS2() {
         assertTrue(str_1_1_DupSol2.findIn(data.get("1_1_duplicate_chars")));
+    }
+
+    @Test public void str_1_2_perm_diff_size() {
+        assertFalse(str_1_2_Permutation.permutations(
+            data.get("str_1_2_permutation_s1"),
+            data.get("str_1_2_permutation_s5")
+        ));
+    }
+
+    @Test public void str_1_2_perm1() {
+        assertFalse(str_1_2_Permutation.permutations(
+            data.get("str_1_2_permutation_s1"),
+            data.get("str_1_2_permutation_s3")
+        ));
+    }
+
+    @Test public void str_1_2_perm2() {
+        assertFalse(str_1_2_Permutation.permutations(
+            data.get("str_1_2_permutation_s1"),
+            data.get("str_1_2_permutation_s3")
+        ));
+    }
+
+    @Test public void str_1_2_perm3() {
+        assertFalse(str_1_2_Permutation.permutations(
+            data.get("str_1_2_permutation_s1"),
+            data.get("str_1_2_permutation_s4")
+        ));
+    }
+
+    @Test public void str_1_2_perm4() {
+        assertFalse(str_1_2_Permutation.permutations(
+            data.get("str_1_2_permutation_s5"),
+            data.get("str_1_2_permutation_s6")
+        ));
+    }
+
+    @Test public void str_1_2_perm5() {
+        assertTrue(str_1_2_Permutation.permutations(
+            data.get("str_1_2_permutation_s1"),
+            data.get("str_1_2_permutation_s2")
+        ));
     }
 
 

@@ -1,6 +1,6 @@
 {
-    "str_1_1_unique_chars"    : "abcdefghijklmnopqrstuvwxyzSTNHLGDA12345",
-    "str_1_1_duplicate_chars" : "abcdefghijklmnopqrstuvwxyzSTNHLGDA1234a",
+    "1_1_unique_chars"    : "abcdefghijklmnopqrstuvwxyzSTNHLGDA12345",
+    "1_1_duplicate_chars" : "abcdefghijklmnopqrstuvwxyzSTNHLGDA1234a",
     "str_1_2_permutation_s1"  : "aaaabbbbcccc",
     "str_1_2_permutation_s2"  : "abcabcabcabc",
     "str_1_2_permutation_s3"  : "abcdababcabd",
